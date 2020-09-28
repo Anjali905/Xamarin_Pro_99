@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_99CentsRForm.MainPage">
+    <ScrollView>
+        <StackLayout BackgroundColor="White">
+            <Label Text="CUSTOMER RELATIONS INFORMATION" FontSize="21" FontAttributes="Bold" TextColor="DeepPink" Padding="50,25,50,0" HorizontalTextAlignment="Center"/>
+            <Label Text="We are here to help you" TextColor="Gray" HorizontalTextAlignment="Center" FontSize="19"/>
+            <Label Text="CALL-US" HorizontalTextAlignment="Center" TextColor="Black" Padding="60,10,60,0" FontSize="23" FontAttributes="Bold"/>
+            <Label Text="Customer Relations :  888-582-5999" TextColor="Gray" HorizontalOptions="StartAndExpand" FontSize="20" Padding="30,0,0,0"/>
+            <Label Text="Corporate Office: 323-980-8145" TextColor="Gray" HorizontalOptions="StartAndExpand" FontSize="20" Padding="30,0,0,0"/>
+            <Label Text="SEND US A MESSAGE" HorizontalTextAlignment="Center" TextColor="Black" Padding="60,10,60,0" FontSize="23" FontAttributes="Bold"/>
+            <Label FontSize="20" Margin="10">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Your Name " TextColor="Black"></Span>
+                        <Span Text="*" TextColor="Red"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Entry Placeholder="" BackgroundColor="LightGray"></Entry>
+            <Label FontSize="20" Margin="10">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Subject" TextColor="Black"></Span>
+                        <Span Text="*" TextColor="Red"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Entry Placeholder="" BackgroundColor="LightGray"></Entry>
+            <Label FontSize="20" Margin="10">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Department" TextColor="Black"></Span>
+                        <Span Text="*" TextColor="Red"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Picker x:Name="picker"
+                Title="-select-" BackgroundColor="LightGray" TextColor="Black">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Customer Relations</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label FontSize="20" Margin="10">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Store Location" TextColor="Black"></Span>
+                        <Span Text="*" TextColor="Red"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Entry Placeholder="" BackgroundColor="LightGray"></Entry>
+
+            <Label FontSize="20" Margin="10">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Your Email Address" TextColor="Black"></Span>
+                        <Span Text="*" TextColor="Red"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Entry Placeholder="" BackgroundColor="LightGray"></Entry>
+            <Label FontSize="20" Margin="10">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Message" TextColor="Black"></Span>
+                        <Span Text="*" TextColor="Red"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Editor Placeholder=" " BackgroundColor="LightGray" HeightRequest="100"></Editor>
+            <CheckBox></CheckBox>
+            <Label Text="I'm not a robot" FontSize="Body" TextColor="Gray"></Label>
+            <Button Text="Submit" HorizontalOptions="Center" BackgroundColor="DeepPink"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
